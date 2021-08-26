@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CUSTOMER REGISTRATIONS</title>
+
+
+</head>
+<body>
+<h2 align="center"><U>USER REGISTRATION</U> </h2>
+<form method="POST">
+    <table border="3" align="center" WIDTH="30%">
+    {% csrf_token %}
+
+        <tr><th>f_name</th><td><input type="text" name="f_name"></td></tr>
+        <tr><th>l_name</th><td><input type="text" name="l_name"></td></tr>
+        <tr><th>e_mail</th><td><input type="email" name="email"></td></tr>
+        <tr><th>password</th><td><input type="password" name="pswd"></td></tr>
+        <tr><th>address</th><td><textarea name="address"></textarea></td></tr>
+        <tr><th>contact </th><td><input type="text" name="contact"></td></tr>
+        <tr></tr>
+   <tr rowspan="2"><th colspan="3"><input type="Submit" name="LOGIN"></th></tr>
+        </table>
+</form>
+</body>
+</html>

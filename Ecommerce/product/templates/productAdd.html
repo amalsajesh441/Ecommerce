@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Adding</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+         .button{
+            background-color: aquamarine;
+            padding: 15px;
+            align: center;
+            font-size: 16px;
+        }
+    </style>
+
+</head>
+
+<body>
+<H2 align="CENTER">ADD DETAILS</H2>
+
+<form method="POST">
+    <table class="table table-dark"align="center">
+    {% csrf_token %}
+        <tr><th>Product Name</th><td><input type="text" name="pname"></td></tr>
+    <tr><th>Price</th><td><input type="text" name="price"></td></tr>
+        <tr></tr>
+        <tr></tr>
+    </table>
+            <button class="button" align="center"> Submit</button>
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+http://127.0.0.1:8000/logview -- for login
+http://127.0.0.1:8000/custview -- customer registration
+
+Django administrator:
+
+Superuser admin: 
+username: faya
+password: faya
+
+admin who will approve customer
+
+username: faya1
+password: root1234@
